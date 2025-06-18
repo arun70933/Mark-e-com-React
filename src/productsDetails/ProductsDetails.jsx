@@ -85,7 +85,7 @@ console.log("product",product);
             
    
     <div className="my-20">
-                   <h4 className="font-bold text-1xl text-center my-10 pb-10">You might also like</h4>
+                   <h4 className="font-bold text-1xl ms-35  pb-5">You might also like</h4>
                    <div className="flex mx-40   ms-45 flex-wrap gap-10 ">
                                  {requiredProductsFilter.map((items)=><Card items={items}/>)}
    
