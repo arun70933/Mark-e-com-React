@@ -70,6 +70,7 @@ console.log("product",product);
                         </div>
                        
                 </div>
+                
 
                 <div class='flex'>
                 <h5 className='font-bold'>${product[0].price}</h5>
@@ -81,6 +82,7 @@ console.log("product",product);
 
                 </div>
             </div> 
+            <Toogle/>
 
             
    
