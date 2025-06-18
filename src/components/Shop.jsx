@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { products } from '../../public/products';
 import Card from '../components/Card';
-
+import table from '../../public/Images/table.jpg'
 export default function Shop() {
   const [specificPro, setSpecificPro] = useState("");
   const [search, setSearch] = useState("");
@@ -22,9 +22,21 @@ export default function Shop() {
 
   return (
     <>
-      <div className='w-full h-55 bg-blue-500 text-white text-center pt-15'>
-        <h1 className='text-3xl font-bold'>Products</h1>
-      </div>
+      <div
+       className="w-full h-60 text-white text-center flex items-center justify-center bg-cover bg-center"
+       style={{ backgroundImage: `url(${table})`,
+        backgroundSize: "cover",
+  backgroundRepeat:" no-repeat",
+  backgroundPosition: "left",
+  justifyContent: "center",
+  backgroundColor: "rgba(22, 21, 21, 0.5)",
+  backgroundBlendMode: "darken"
+}}
+     >
+       <h1 className="text-3xl font-bold   px-4 py-2 rounded">
+         Products
+       </h1>
+     </div>
      
 
 
