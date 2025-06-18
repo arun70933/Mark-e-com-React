@@ -76,7 +76,7 @@ console.log("product",product);
                 <p className='ms-14'>category:{product[0].category}</p>
                 </div>
                 <p>{product[0].shortDesc}</p>
-                <input type="number" defaultValue='1' value={quantity} className='border-1 w-20 ps-3 mt-4' style={{borderRadius:"5px"}}/>
+                <input type="number" defaultValue='1' value={quantity}  onChange={(e)=>setQuantity(Number(e.target.value))} className='border-1 w-20 ps-3 mt-4' style={{borderRadius:"5px"}}/>
                 <button className='bg-blue-950 w-30 py-2 text-white mt-3 ' style={{borderRadius:"5px"}} onClick={handleAddToCArt}>Add To Cart</button>
 
                 </div>
