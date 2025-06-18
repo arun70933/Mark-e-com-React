@@ -1,7 +1,7 @@
 import React from "react";
 import { FaStar } from "react-icons/fa6";
 import { FaPlus } from "react-icons/fa";
-
+import { FaRegHeart } from "react-icons/fa"; 
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../Redux/ProductSlice";
@@ -12,6 +12,9 @@ export default function Card({ items }) {
 
   return (
     <div className="group relative flex flex-col gap-3 w-90 p-5 border border-gray-200 shadow-md rounded-xl transition-transform duration-300 hover:shadow-lg">
+      <div className="absolute top-3 right-3 pt-10 pe-2  opacity-1 group-hover:opacity-70 transition-opacity duration-300 z-10 cursor-pointer ">
+        <FaRegHeart className="text-black hover: text-xl opacity-100" title="Add to Wishlist" />
+      </div>
 
       {/* Discount badge */}
       {items.discount && (
