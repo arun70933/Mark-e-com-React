@@ -51,7 +51,7 @@ const totalPrice=items.reduce((acc,item)=>acc+item.price*item.quantity,0)
                   <h3 className="text-lg font-semibold">{item.productName}</h3>
                   <IoCloseSharp
                     className="text-2xl text-black cursor-pointer"
-                   
+                    onClick={() => dispatch(removeFromCart(item))}
                   />
                 </div> 
                 <div className='flex pt-4'>
