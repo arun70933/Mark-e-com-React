@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { products } from '../../public/products';
 import Card from '../components/Card';
 import table from '../../public/Images/table.jpg'
+import { CiSearch } from "react-icons/ci";
 export default function Shop() {
   const [specificPro, setSpecificPro] = useState("");
   const [search, setSearch] = useState("");
@@ -40,7 +41,7 @@ export default function Shop() {
      
 
 
-      <div className='ms-25 mt-10 mb-6 flex gap-6 px-10'>
+      <div className='ms-25 mt-10 mb-6 flex justify-between gap-6 px-10'>
         <select
           onChange={handleCategory}
           className='border w-52 h-10 bg-blue-950 text-white rounded-md px-2'
@@ -52,14 +53,15 @@ export default function Shop() {
           <option value="mobile">Mobile</option>
           <option value="wireless">Wireless</option>
         </select>
-
-        <input
+        <div className='border-none px-3 py-2  w-180 bg-gray-100 rounded-xl flex '>
+        <input 
           type="text"
-          placeholder='Search by product name...'
-          className='border px-3 py-2 rounded-md w-64'
+          placeholder='Search...'
           onChange={SearchHandle}
-          value={search}
-        />
+          className='focus:outline-none'
+          value={search}/>
+          <span className='font-bold ps-123 pt-1'><CiSearch/></span>
+        </div>
       </div>
 
       
