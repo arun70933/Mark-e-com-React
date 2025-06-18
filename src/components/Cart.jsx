@@ -63,7 +63,7 @@ const totalPrice=items.reduce((acc,item)=>acc+item.price*item.quantity,0)
             
                  <div className="flex items-center gap-3 ms-120 ">
                       <button
-                      
+                      onClick={() => dispatch(increaseQty(item))}
                       className="p-1 border-gray-100   hover:bg-gray-200"
                     >
                       <FaPlus />
