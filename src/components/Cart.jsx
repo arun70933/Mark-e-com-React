@@ -43,7 +43,7 @@ const totalPrice=items.reduce((acc,item)=>acc+item.price*item.quantity,0)
         {/* Cart Items Section */}
         <div className="flex-1 ">
           {items.map((item) => (
-            <div key={item.id} className="flex flex-col md:flex-row items-start border rounded-xl p-4 shadow-sm bg-white">
+            <div key={item.id} className="flex flex-col md:flex-row items-start border rounded-xl p-4 shadow-sm bg-white mb-10">
               <img src={item.imgUrl} alt={item.productName} className="w-40 object-cover rounded-md" />
               
               <div className="flex-1  md:ml-6 mt-4 md:mt-0 w-full ">
