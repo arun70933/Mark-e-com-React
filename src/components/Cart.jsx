@@ -70,7 +70,7 @@ const totalPrice=items.reduce((acc,item)=>acc+item.price*item.quantity,0)
                     </button>
                   
                     <button
-                     
+                      onClick={() => dispatch(decreaseQty((item)))}
                      className="p-1 border-gray-100   hover:bg-gray-200"
                     >
                       <FaMinus />
