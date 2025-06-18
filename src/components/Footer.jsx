@@ -10,7 +10,7 @@ export default function Footer() {
      
       <div className="space-y-4">
         <div className="flex items-center font-bold">
-          
+          <span className='text-2xl'><IoBag/></span>
           <span className="ml-2 text-2xl font-bold">MART</span>
         </div>
         <p className="text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi laudantium corrupti accusamus ex ut consequuntur fugit reiciendis facere dignissimos nesciunt, id quasi facilis sequi, cumque itaque repellat quibusdam </p>
