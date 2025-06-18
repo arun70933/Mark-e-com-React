@@ -38,7 +38,13 @@ console.log("product",product);
       <div>        
        <div
   className="w-full h-60 text-white text-center flex items-center justify-center bg-cover bg-center"
-  style={{ backgroundImage: `url(${table})` }}
+  style={{ backgroundImage: `url(${table})`,
+  backgroundSize: "cover",
+  backgroundRepeat:" no-repeat",
+  backgroundPosition: "left",
+  justifyContent: "center",
+  backgroundColor: "rgba(22, 21, 21, 0.5)",
+  backgroundBlendMode: "darken"}}
 >
   <h1 className="text-3xl font-bold   px-4 py-2 rounded">
     {product[0].productName}
